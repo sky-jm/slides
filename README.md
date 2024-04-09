@@ -5,7 +5,7 @@
 ## How to compile static HTML
 1) Install [Marp](https://marp.app/)
 2) Make sure it's in PATH
-3) Run `marp <markdown filename>
+3) Run `marp <markdown filename>`
 
 ## Tips
 While you are editing you might want to use `-w` to watch for changes in the Markdown file and automatically recompile.
