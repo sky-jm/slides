@@ -69,8 +69,6 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 **Prompt:**
 Create an image of a swimmer jumping into a large coffee cup, with the goal of achieving maximum stability and control during the dive. The swimmer should be shown in the act of taking off from the edge of the pool, their body positioned to make a smooth and controlled descent into the cup. The coffee cup should be depicted as a round, stainless steel container, with a lid that is securely closed. The background should be a bright and colorful one, with a clear sky and white clouds. The lighting should be bright and warm, with the sun shining down on the scene. The swimmer should be shown in their full splendor, with a confident and powerful look on their face. The overall theme of the image should be one of athleticism and skill, as the swimmer is demonstrating their ability to jump into a large coffee cup with precision and control.
 
-
-
 --- 
 
 
@@ -84,6 +82,9 @@ Employee[] arrayOfEmps = {
         new Employee(3, "Mark", 45000.0)
 };
 ```
+
+![bg left:40% width: 80%](class.png)
+
 --- 
 
 ## Creating a stream
@@ -181,11 +182,11 @@ employeeList.stream().peek(e -> e.setSalary(e.getSalary() + 2000))
 Long empCount = employeeList.stream()
         .filter(e -> e.getSalary() > 60000.0)
         .count();
-System.out.println("Number of employees with salary over 50,000: %d".formatted(empCount));
+System.out.println("Number of employees with salary over 60,000: %d".formatted(empCount));
 ```
 Output:
 ```bash
-Number of employees with salary over 50,000: 1
+Number of employees with salary over 60,000: 1
 ```
 
 ---
