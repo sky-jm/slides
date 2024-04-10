@@ -19,8 +19,10 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
 # What are those?
-* Wrappers around a provided data source (think: arrays, collections, etc.)
+* Wrappers around a provided data source (think: arrays, collections, lists, etc.)
+* Iterate over it, manipulate the values, produce new collections
 * The classic taste of functional programming - think `map` `filter` `reduce` etc.
+
 # What aren't those?
 * Not a data structure 
 * Never modifies original data source
@@ -33,14 +35,14 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 * Another stream
     * Chaining!
 ## Terminal operations
-* End result with a definite type
+* => end result with a definite type
 * Stream is over, cannot be used any further
 ---
 
 # Benefits 
 * Intermediate ops not executed until needed
-* Computation happens only when terminal operation initiated
 * Source elements are consumed as needed
+* Computation happens only when terminal operation initiated
 * Ready for paralelization - `parallel()`
 ---
 
@@ -231,7 +233,6 @@ Stream.generate(Math::random)
 * `sorted`, `min`, `max`, `sum`, `range`, `average`, ...
 * Collectors: `summarizingDouble`, `partitioningBy`, `groupingBy`, `mapping`, `reducing` 
 * `iterate`
-* Java 9: `takeWhile`,
 * And many others
 
 ---
